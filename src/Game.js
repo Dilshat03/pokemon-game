@@ -42,10 +42,10 @@ const Pokemons = () => {
             setGoal([])
             setMessage('')
         }
-        if (setIsActive===false && freeAttempt -1 === 0){
-            setScore(0)
-            setFreeAttempt(10)
-        }
+        // if (setIsActive===false && freeAttempt -1 === 0){
+        //     setScore(0)
+        //     setFreeAttempt(10)
+        // }
     }
     const compareAnswer = (id) => {
         if (id === goal.id) {

@@ -22,15 +22,42 @@
 
 .img {
     text-align: center;
-    border: 1px solid #00eaff;
-    background-color: rgba(77, 255, 240, 0.58);
     margin: 20px 0;
+    box-shadow: 0 0 0 100px inset, 0 0 5px grey;
+    transition: box-shadow 1s;
+    color: rgba(71, 121, 94, .9);
+}
+.img::after {
+    width: 80%;
+    height: 80%;
+    display: block;
+    white-space: pre;
+    font: 15pt 'sigmar one';
+    color: white;
+    border: 2px solid;
+    text-align: center;
+    /* center content using flex box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* hover out transition */
+    transition: opacity 1s .5s;
+}
+
+.img:hover {
+    box-shadow: 0 0 0 5px inset, 0 0 5px grey, 0 0 10px grey inset;
+    transition: box-shadow 1s;
+    transform: rotate(360deg);
+}
+.img:hover::after {
+    opacity: 0;
+    transition: opacity .5s;
 }
 
 .all-elements {
     text-align: center;
     width: 300px;
-    margin: auto;
+    margin: 30px auto;
     border: 2px solid black;
     height: 550px;
     display: flex;
