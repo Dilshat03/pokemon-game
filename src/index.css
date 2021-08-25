@@ -1,13 +1,82 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Monoton&family=Press+Start+2P&family=Rock+Salt&display=swap');
+*{
+    padding: 0;
+    margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn-start {
+    padding: 5px 20px;
+    margin: auto;
+    display: block;
+    background-color: #4bdcc6;
+    border: none;
+    font-family: 'Monoton', cursive;
+    font-weight: 400;
+}
+
+.bnt-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    text-align: center;
+    border: 1px solid #00eaff;
+    background-color: rgba(77, 255, 240, 0.58);
+    margin: 20px 0;
+}
+
+.all-elements {
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    border: 2px solid black;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.64);
+}
+
+body {
+    height: 100vh;
+    background: url("./wallpaperbetter (1).jpg") no-repeat center/cover;
+    width: 100%;
+
+}
+
+.bnt-answers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bnt-answer {
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    width: 140px;
+    background-color: darkseagreen;
+    border: none;
+    font-family: 'Monoton', cursive;
+    font-weight: 400;
+}
+.pokemon-title{
+    font-family: 'Press Start 2P', cursive,sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.freeAttempt{
+    font-family: 'Rock Salt', cursive;
+    font-weight: 400;
+}
+.message-title{
+    font-family: 'Rock Salt', cursive,sans-serif;
+    font-weight: 400;
+}
+.score{
+    font-family: 'Audiowide', cursive;
+    font-weight: 400;
 }
